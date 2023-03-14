@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    /* PRIMARY COLORS */
+    --clr-moderate-violet: hsl(263, 55%, 52%);
+    --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --clr-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* NEUTRAL COLORS */
+    --clr-light-gray: hsl(0, 0%, 81%);
+    --clr-light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* FONT SIZE */
+    --fs-student-status: 0.7rem;
+    --fs-body: 0.865rem; 
+    --fs-highlight: 1.34rem;
+    --fs-name: 0.8125rem;  /*13px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--clr-light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/* For all content */
+.all-content {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 77.5%;
+}
+
+.right {
+    width: 22.5%;
+    background-color: var(--clr-white);
+}
+
+.right img {
+    border: 2px solid hsla(217, 19%, 35%, 0.5);
+}
+.right .student-name, .right .text-highlight {
+    color: var(--clr-very-dark-grayish-blue);
+}
+.right .student-status, .right .testimony {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+.right .text-highlight {
+    font-size: var(--fs-highlight);
+    font-weight: 600;
+    line-height: 1.7rem;
+    margin: 16px 0;
+}
+.right .testimony {
+    font-size: var(--fs-body);
+    line-height: 1.25rem;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box {
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 20px 18px 40px -13px rgba(0,0,0,0.3);
+}
+
+
+.student-identity {
+    display: flex;
+    gap: 20px;
+}
+.student-identity img {
+    border-radius: 50%;
+    width: 1.85rem;
+    height: 1.85rem;
+}
+.student-name {
+    font-size: var(--fs-name);
+}
+.student-status {
+    font-size: var(--fs-student-status);
+}
+
+
+/* For top row */
+.top-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.top-left {
+    width: 68%;
+    background-color: var(--clr-moderate-violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position: right 15% top 0%;
+}
+.top-left img {
+    border: 2px solid hsla(210, 46%, 95%, 0.5);
+}
+.top-left .student-name, .top-left .text-highlight {
+    color: var(--clr-light-grayish-blue);
+}
+.top-left .student-status, .top-left .testimony {
+    color: hsla(210, 46%, 95%, 0.7);
+}
+.top-left .text-highlight {
+    font-size: var(--fs-highlight);
+    font-weight: 600;
+    line-height: 1.7rem;
+    margin: 16px 0;
+}
+.top-left .testimony {
+    font-size: var(--fs-body);
+    line-height: 1.25rem;
+}
+
+.top-right {
+    width: 32%;
+    background-color: var(--clr-very-dark-grayish-blue);
+}
+.top-right img {
+    border: 2px solid hsla(210, 46%, 95%, 0.5);
+}
+.top-right .student-name, .top-right .text-highlight {
+    color: var(--clr-light-grayish-blue);
+}
+.top-right .student-status, .top-right .testimony {
+    color: hsla(210, 46%, 95%, 0.7);
+}
+.top-right .text-highlight {
+    font-size: var(--fs-highlight);
+    font-weight: 600;
+    line-height: 1.7rem;
+    margin: 16px 0;
+}
+.top-right .testimony {
+    font-size: var(--fs-body);
+    line-height: 1.3rem;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* For bottom row */
+.bottom-row {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-left {
+    width: 32%;
+    background-color: var(--clr-white);
+}
+.bottom-left img {
+    border: 2px solid hsla(217, 19%, 35%, 0.5);
+}
+.bottom-left .student-name, .bottom-left .text-highlight {
+    color: var(--clr-very-dark-grayish-blue);
+}
+.bottom-left .student-status, .bottom-left .testimony {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+.bottom-left .text-highlight {
+    font-size: var(--fs-highlight);
+    font-weight: 600;
+    line-height: 1.7rem;
+    margin: 16px 0;
+}
+.bottom-left .testimony {
+    font-size: var(--fs-body);
+    line-height: 1.25rem;
+}
+
+.bottom-right {
+    width: 68%;
+    background-color: var(--clr-very-dark-blackish-blue);
+}
+.bottom-right img {
+    border: 2px solid var(--clr-moderate-violet);
+}
+.bottom-right .student-name, .bottom-right .text-highlight {
+    color: var(--clr-light-grayish-blue);
+}
+.bottom-right .student-status, .bottom-right .testimony {
+    color: hsla(210, 46%, 95%, 0.7);
+}
+.bottom-right .text-highlight {
+    font-size: var(--fs-highlight);
+    font-weight: 600;
+    line-height: 1.7rem;
+    margin: 16px 0;
+}
+.bottom-right .testimony {
+    font-size: var(--fs-body);
+    line-height: 1.3rem;
+}
+
+.bottom-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/*********** 
+    MOBILE - MEDIA QUERIES 
+                ***********/
+@media (max-width: 925px) {
+    .all-content {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+    }  
+    .column {
+        float: none;
+    }
+    .left, .right, 
+    .top-left, .top-right, 
+    .bottom-left, .bottom-right   {
+        width: 100%;
+    }
+    .top-left {
+        background-position: right 15% top 0%;
+    }
+    .top-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .bottom-row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .right .text-highlight,
+    .top-left .text-highlight,
+    .top-right .text-highlight,
+    .bottom-left .text-highlight,
+    .bottom-right .text-highlight {
+        font-size: 1.31rem;
+        margin: 12px 0;
+    }
+    .right .testimony,
+    .top-left .testimony,
+    .top-right .testimony,
+    .bottom-left .testimony,
+    .bottom-right .testimony {
+        font-size: 0.9rem;
+    }
+
+}
+ 
